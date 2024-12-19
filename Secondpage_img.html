@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary Content</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        }
+
+        .content-container {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .content-container img {
+            max-width: 70%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .content-container h1 {
+            font-size: 2.5em;
+            color: #ff6f61;
+        }
+
+        .content-container p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .content-container .heart {
+            font-size: 3em;
+            color: #ff6f61;
+            margin: 10px 0;
+        }
+
+        /* CSS สำหรับปุ่มหัวใจ */
+        .heart-btn {
+            position: relative;
+            width: 50px;  /* ปรับขนาดหัวใจ */
+            height: 50px; /* ปรับขนาดหัวใจ */
+            background-color: #ff6f61;
+            display: inline-block;
+            transform: rotate(-45deg);
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+            margin-top: 20px;
+        }
+
+        .heart-btn:before,
+        .heart-btn:after {
+            content: '';
+            position: absolute;
+            width: 50px;  /* ปรับขนาดหัวใจ */
+            height: 50px; /* ปรับขนาดหัวใจ */
+            background-color: #ff6f61;
+            border-radius: 50%;
+        }
+
+        .heart-btn:before {
+            top: -25px;  /* ปรับตำแหน่ง */
+            left: 0;
+        }
+
+        .heart-btn:after {
+            top: 0;
+            left: 25px;  /* ปรับตำแหน่ง */
+        }
+
+        .heart-btn:hover {
+            transform: rotate(-45deg) scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1>Happy 2 month anniversary!</h1>
+        <img src="../img/24624.jpg" alt="รูปคู่ที่น่ารัก">
+        <p>วันนี้ก็ครบรอบสองเดือนแล้วน้า</p>
+        <p>ขอบคุณที่หนูยังเชื่อใจและยังรักพี่นะ พี่สัญญาว่าจะอยู่กับหนูแบบนี้ไปนานๆเลย</p>
+        <img src="../img/24620.jpg" alt="รูปคู่เพิ่มเติม">
+        <p>แล้วถึงแม้เราจะผ่านเรื่องแย่ๆมาด้วยกัน ไม่ว่าจะเป็นทั้งเรื่องที่พี่เคยทำกับหนูและเรื่องๆอื่นเล็กๆน้อยๆพี่ก็อยากขอโทษมากๆจากใจจริง</p>
+        <img src="../img/24619.jpg" alt="รูปคู่เพิ่มเติม">
+        <p>สุดท้ายนี้พี่ก็ยังจะรักหนูไปเรื่อยๆ และรักมากขึ้นทุกวันนะคับ</p>
+        <img src="../img/24618.jpg" alt="รูปคู่เพิ่มเติม">
+        <p>ลองกดหัวใจดูสิ</p>
+
+        <!-- ปุ่มหัวใจ -->
+        <div class="heart-btn" onclick="goBack()"></div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "Thirdpage_vdo.html"; // กลับไปยังหน้าหัวใจ
+        }
+    </script>
+</body>
+</html>

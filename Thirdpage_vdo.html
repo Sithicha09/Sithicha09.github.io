@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary Content</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        }
+
+        .content-container {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .content-container h1 {
+            font-size: 2.5em;
+            color: #ff6f61;
+        }
+
+        .content-container p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .content-container video {
+            width: 60%; /* ปรับขนาดให้เหมาะสม */
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* CSS สำหรับปุ่มหัวใจ */
+        .heart-btn {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background-color: #ff6f61;
+            display: inline-block;
+            transform: rotate(-45deg);
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+            margin-top: 20px;
+        }
+
+        .heart-btn:before,
+        .heart-btn:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #ff6f61;
+            border-radius: 50%;
+        }
+
+        .heart-btn:before {
+            top: -25px;
+            left: 0;
+        }
+
+        .heart-btn:after {
+            top: 0;
+            left: 25px;
+        }
+
+        .heart-btn:hover {
+            transform: rotate(-45deg) scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1>Happy 2 month anniversary!</h1>
+        <p>สุดท้ายจริงๆละ อิอิ</p>
+        <!-- แทนที่ <iframe> ด้วย <video> -->
+        <video autoplay controls>
+            <source src="../vdo/366dd877-5cc0-43d2-be0a-f9e92175930d.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        
+        <p>In just two months, we've created memories that will last a lifetime.</p>
+        <p>Love you more every day</p>
+        <h1>LUV U NA</h1>
+
+        <!-- ปุ่มหัวใจ -->
+        <div class="heart-btn" onclick="goBack()"></div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "Firstpage_heart.html"; // กลับไปยังหน้าหัวใจ
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        }
+
+        .heart-btn {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background-color: #ff6f61;
+            transform: rotate(-45deg);
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .heart-btn:before,
+        .heart-btn:after {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: #ff6f61;
+            border-radius: 50%;
+        }
+
+        .heart-btn:before {
+            top: -75px;
+            left: 0;
+        }
+
+        .heart-btn:after {
+            top: 0;
+            left: 75px;
+        }
+
+        .heart-btn:hover {
+            transform: rotate(-45deg) scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- ปุ่มรูปหัวใจ -->
+    <div class="heart-btn" onclick="navigateToContent()"></div>
+
+    <script>
+        function navigateToContent() {
+            window.location.href = "Secondpage_img.html"; // ลิงก์ไปยังหน้าเนื้อหา
+        }
+    </script>
+</body>
+</html>
